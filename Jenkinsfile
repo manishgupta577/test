@@ -26,7 +26,7 @@ pipeline{
         stage("Deploy"){
             steps{
                 echo "depolying the conatiner"
-                sh "docker run -d -p 3000:3000 manish577/test:latest"
+                sh "docker run -d -p 8000:8000 manish577/test:latest"
             }
         }
     }    
